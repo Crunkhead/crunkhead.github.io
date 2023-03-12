@@ -1,0 +1,35 @@
+
+title: "Anjan Gurung"
+author: "Anjan Gurung"
+description: "Software Engineer"
+permalink: /:title/
+lang: "en"
+excerpt_separator: "\n\n\n"
+date_format: "%B %d, %Y"
+
+# Layout
+show_social: true         # show footer
+show_excerpts: false       # show article excerpts on the home page
+show_frame: false           # adds a gray frame to the site
+show_sidebar: false        # show a sidebar instead of the usual header
+
+# Menu
+
+navigation:                # accepts {file, title, url, icon, sidebaricon}
+  - {file: "index.md"}
+  - {file: "blog.md"}
+  - {url: "/{$}.pdf", title: CV}
+
+
+external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
+  - {title: Mail, icon: envelope, url: "mailto:gurunganjan46@gmail.com"}
+  - {title: Github, icon: github, url: "https://github.com/Crunkhead"}
+  - {title: Twitter, icon: twitter, url: "https://twitter.com/anjalgirii"}
+
+
+remote_theme: niklasbuschmann/contrast@v2.11
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-feed
+
